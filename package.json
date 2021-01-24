@@ -1,26 +1,41 @@
 {
   "name": "react.lupinemoon",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "typescript": "^4.0.3",
-    "web-vitals": "^0.2.4"
+  "version": "0.0.1",
+  "description": "The Lupine Moon website built using React, Typescript, MobX, Ant Design, and Webpack.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolaspearson/react.lupinemoon.git"
   },
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "cra-start": "react-scripts start",
+    "cra-build": "react-scripts build",
+    "cra-test": "react-scripts test",
+    "cra-eject": "react-scripts eject",
+    "prettier": "prettier --write 'src/**/*.ts{,x}'",
+    "lint": "tsc --noEmit && eslint src/**/*.ts{,x}"
+  },
+  "dependencies": {
+    "react": "~17.0.1",
+    "react-dom": "~17.0.1",
+    "react-scripts": "4.0.1",
+    "web-vitals": "~0.2.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "~7.12.12",
+    "@craco/craco": "~6.0.0",
+    "@testing-library/jest-dom": "~5.11.4",
+    "@testing-library/react": "~11.1.0",
+    "@testing-library/user-event": "~12.1.10",
+    "@types/jest": "~26.0.15",
+    "@types/node": "~12.0.0",
+    "@types/react": "~16.9.53",
+    "@types/react-dom": "~16.9.8",
+    "typescript": "~4.0.3",
+    "webpackbar": "~4.0.0"
   },
   "eslintConfig": {
     "extends": [
