@@ -7,4 +7,5 @@
 
 # javascript config files
 .eslintrc.js
+commitlint.config.js
 craco.config.js
