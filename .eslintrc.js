@@ -1,5 +1,9 @@
 // @ts-ignore
 module.exports = {
+  root: true,
+  env: {
+    node: true,
+  },
   extends: [
     'airbnb-typescript',
     'eslint:recommended',

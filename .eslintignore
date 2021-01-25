@@ -1,2 +1,10 @@
+# auto-generated folders
+**/.vscode/**
+**/.yarn/**
+**/build/**
+**/coverage/**
+**/node_modules/**
+
+# javascript config files
 .eslintrc.js
 craco.config.js
