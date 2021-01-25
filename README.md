@@ -50,7 +50,7 @@ This project includes a multi-stage Dockerfile.
 To build the image:
 
 ```bash
-docker build . --tag react.lupinemoon:1.0
+docker build . --tag react-lupinemoon:1.0
 ```
 
 Alternatively, build and run:

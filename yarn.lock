@@ -9407,7 +9407,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest-environment-jsdom@npm:^26.6.2":
+"jest-environment-jsdom@npm:^26.6.2, jest-environment-jsdom@npm:~26.6.2":
   version: 26.6.2
   resolution: "jest-environment-jsdom@npm:26.6.2"
   dependencies:
@@ -13648,6 +13648,7 @@ fsevents@^1.2.7:
     eslint-plugin-react-hooks: ~4.2.0
     husky: ~4.3.8
     jest: ~26.6.3
+    jest-environment-jsdom: ~26.6.2
     npm-check-updates: ~11.1.0
     prettier: ~2.2.1
     pretty-quick: ~3.1.0
