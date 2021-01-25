@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# react.lupinemoon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the source code for [Lupine Moon](https://www.lupinemoon.co.za) website, built using React, Typescript, MobX, Ant Design, and Webpack. We leverage [Create React App Configuration Override](https://github.com/sharegate/craco) in order to provide custom build functionality.
+
+## Getting Started
+
+To get started clone the repository and run:
+
+```bash
+yarn install
+```
+
+Followed by:
+
+```bash
+yarn start
+```
 
 ## Available Scripts
 
@@ -29,18 +43,31 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Docker
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project includes a multi-stage Dockerfile.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To build the image:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+docker build . --tag react.lupinemoon:1.0
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Alternatively, build and run:
 
-## Learn More
+```bash
+docker-compose up --build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Or, just run the existing image:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+docker-compose up
+```
+
+Runs the app in production mode.
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+
+## Contribution Guidelines
+
+Code reviews are done via pull requests.
