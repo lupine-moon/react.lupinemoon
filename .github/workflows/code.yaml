@@ -18,5 +18,5 @@ jobs:
       - name: install, lint, and build
         run: |
           yarn install
-          yarn lint:ts
+          yarn lint
           yarn build
