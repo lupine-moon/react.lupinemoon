@@ -1,6 +1,6 @@
-module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-  testMatch: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
-  verbose: false,
-};
+const { createJestConfig } = require('@craco/craco');
+
+const cracoConfig = require('./craco.config.js');
+const jestConfig = createJestConfig(cracoConfig);
+
+module.exports = jestConfig;

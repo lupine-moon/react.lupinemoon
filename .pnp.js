@@ -50,6 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/testing-library__jest-dom", "npm:5.9.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:4.14.2"],
             ["@typescript-eslint/parser", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:4.14.2"],
+            ["babel-plugin-module-resolver", "npm:4.1.0"],
             ["babel-preset-react-app", "npm:10.0.0"],
             ["dotenv", "npm:8.2.0"],
             ["eslint", "npm:7.19.0"],
@@ -6914,6 +6915,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["babel-plugin-module-resolver", [
+        ["npm:4.1.0", {
+          "packageLocation": "./.yarn/cache/babel-plugin-module-resolver-npm-4.1.0-0510da8f92-c3efeaac63.zip/node_modules/babel-plugin-module-resolver/",
+          "packageDependencies": [
+            ["babel-plugin-module-resolver", "npm:4.1.0"],
+            ["find-babel-config", "npm:1.2.0"],
+            ["glob", "npm:7.1.6"],
+            ["pkg-up", "npm:3.1.0"],
+            ["reselect", "npm:4.0.0"],
+            ["resolve", "patch:resolve@npm%3A1.19.0#builtin<compat/resolve>::version=1.19.0&hash=3388aa"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["babel-plugin-named-asset-import", [
         ["npm:0.3.7", {
           "packageLocation": "./.yarn/cache/babel-plugin-named-asset-import-npm-0.3.7-db0b2f8fd9-cc09e3679a.zip/node_modules/babel-plugin-named-asset-import/",
@@ -11021,6 +11036,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["find-babel-config", [
+        ["npm:1.2.0", {
+          "packageLocation": "./.yarn/cache/find-babel-config-npm-1.2.0-428bef14f2-da8fdf080a.zip/node_modules/find-babel-config/",
+          "packageDependencies": [
+            ["find-babel-config", "npm:1.2.0"],
+            ["json5", "npm:0.5.1"],
+            ["path-exists", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["find-cache-dir", [
         ["npm:2.1.0", {
           "packageLocation": "./.yarn/cache/find-cache-dir-npm-2.1.0-772aa82638-6e99602656.zip/node_modules/find-cache-dir/",
@@ -13967,6 +13993,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["json5", [
+        ["npm:0.5.1", {
+          "packageLocation": "./.yarn/cache/json5-npm-0.5.1-dad9a6cdb1-002ce9e56c.zip/node_modules/json5/",
+          "packageDependencies": [
+            ["json5", "npm:0.5.1"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:1.0.1", {
           "packageLocation": "./.yarn/cache/json5-npm-1.0.1-647fc8794b-df41624f9f.zip/node_modules/json5/",
           "packageDependencies": [
@@ -18057,6 +18090,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/testing-library__jest-dom", "npm:5.9.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:4.14.2"],
             ["@typescript-eslint/parser", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:4.14.2"],
+            ["babel-plugin-module-resolver", "npm:4.1.0"],
             ["babel-preset-react-app", "npm:10.0.0"],
             ["dotenv", "npm:8.2.0"],
             ["eslint", "npm:7.19.0"],
@@ -18527,6 +18561,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/requires-port-npm-1.0.0-fd036b488a-0db25fb2ac.zip/node_modules/requires-port/",
           "packageDependencies": [
             ["requires-port", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["reselect", [
+        ["npm:4.0.0", {
+          "packageLocation": "./.yarn/cache/reselect-npm-4.0.0-4189778eed-3480930929.zip/node_modules/reselect/",
+          "packageDependencies": [
+            ["reselect", "npm:4.0.0"]
           ],
           "linkType": "HARD",
         }]
