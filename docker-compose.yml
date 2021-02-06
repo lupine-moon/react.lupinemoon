@@ -1,20 +1,14 @@
 version: '3.7'
 
-networks:
-  development:
-    name: development-network
-
 services:
   react-lupinemoon:
-    hostname: localhost
     image: react-lupinemoon:1.0
     build:
       context: .
-    container_name: react-lupinemoon-client
+      dockerfile: Dockerfile
+    container_name: react-lupinemoon
     expose:
       - 80
     ports:
       - 8080:80
     restart: always
-    networks:
-      - development
