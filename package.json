@@ -18,7 +18,8 @@
     "cra-eject": "react-scripts eject",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
     "ncu": "ncu -u",
-    "prettier": "prettier --write 'src/**/*.ts{,x}'"
+    "prettier": "prettier --write 'src/**/*.ts{,x}'",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@testing-library/jest-dom": "~5.11.9",
