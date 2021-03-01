@@ -14951,6 +14951,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-icons@npm:~4.1.0":
+  version: 4.1.0
+  resolution: "react-icons@npm:4.1.0"
+  peerDependencies:
+    react: "*"
+  checksum: 08d768e9c20a061a11de6c0050f0b199451b83592ef2fdb1add9f1f14ff6f356e1950621c3fd257f18383bb917e04577d03740b9be0754046bc435e7897141f9
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.7.0, react-is@npm:^16.8.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -14995,7 +15004,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-remove-scroll@npm:2.4.1":
+"react-remove-scroll@npm:2.4.1, react-remove-scroll@npm:~2.4.1":
   version: 2.4.1
   resolution: "react-remove-scroll@npm:2.4.1"
   dependencies:
@@ -15148,7 +15157,9 @@ fsevents@^1.2.7:
     pretty-quick: ~3.1.0
     react: ~17.0.1
     react-dom: ~17.0.1
+    react-icons: ~4.1.0
     react-refresh: ~0.9.0
+    react-remove-scroll: ~2.4.1
     react-scripts: ~4.0.3
     ts-jest: ~26.5.2
     typescript: ~4.1.5

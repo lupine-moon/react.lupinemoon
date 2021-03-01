@@ -72,7 +72,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pretty-quick", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:3.1.0"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:17.0.1"],
+            ["react-icons", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:4.1.0"],
             ["react-refresh", "npm:0.9.0"],
+            ["react-remove-scroll", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:2.4.1"],
             ["react-scripts", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:4.0.3"],
             ["ts-jest", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:26.5.2"],
             ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"],
@@ -4888,7 +4890,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["aria-hidden", "npm:1.1.2"],
             ["framer-motion", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:3.9.0"],
             ["react", "npm:17.0.1"],
-            ["react-remove-scroll", "virtual:7c27820edf2bacbc9eec76442d508f38b7a0e0dd9f11e8a842c7cc8a30f1d7c79d23271ec547c0fd36cc8fd46051e4ffeb100ff58bbe2b01bb0644831a33350f#npm:2.4.1"]
+            ["react-remove-scroll", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:2.4.1"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
@@ -20596,6 +20598,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["react-icons", [
+        ["npm:4.1.0", {
+          "packageLocation": "./.yarn/cache/react-icons-npm-4.1.0-1bab42a029-08d768e9c2.zip/node_modules/react-icons/",
+          "packageDependencies": [
+            ["react-icons", "npm:4.1.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:4.1.0", {
+          "packageLocation": "./.yarn/$$virtual/react-icons-virtual-250d06d941/0/cache/react-icons-npm-4.1.0-1bab42a029-08d768e9c2.zip/node_modules/react-icons/",
+          "packageDependencies": [
+            ["react-icons", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:4.1.0"],
+            ["@types/react", "npm:17.0.2"],
+            ["react", "npm:17.0.1"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["react-is", [
         ["npm:16.13.1", {
           "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-11bcf1267a.zip/node_modules/react-is/",
@@ -20636,15 +20660,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:7c27820edf2bacbc9eec76442d508f38b7a0e0dd9f11e8a842c7cc8a30f1d7c79d23271ec547c0fd36cc8fd46051e4ffeb100ff58bbe2b01bb0644831a33350f#npm:2.4.1", {
-          "packageLocation": "./.yarn/$$virtual/react-remove-scroll-virtual-29e45519c1/0/cache/react-remove-scroll-npm-2.4.1-acbe3a33a0-871059d1fb.zip/node_modules/react-remove-scroll/",
+        ["virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:2.4.1", {
+          "packageLocation": "./.yarn/$$virtual/react-remove-scroll-virtual-ed901c7bda/0/cache/react-remove-scroll-npm-2.4.1-acbe3a33a0-871059d1fb.zip/node_modules/react-remove-scroll/",
           "packageDependencies": [
-            ["react-remove-scroll", "virtual:7c27820edf2bacbc9eec76442d508f38b7a0e0dd9f11e8a842c7cc8a30f1d7c79d23271ec547c0fd36cc8fd46051e4ffeb100ff58bbe2b01bb0644831a33350f#npm:2.4.1"],
+            ["react-remove-scroll", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:2.4.1"],
             ["@types/react", "npm:17.0.2"],
             ["@types/types__react", null],
             ["react", "npm:17.0.1"],
-            ["react-remove-scroll-bar", "virtual:29e45519c1fa73d4e8017655becfb4533ccbcc4910521792015dfa5db3342d098114e6d9e774c46c67e573bff611bc3cc65a253f55ad7551d9877772a1789c45#npm:2.2.0"],
-            ["react-style-singleton", "virtual:29e45519c1fa73d4e8017655becfb4533ccbcc4910521792015dfa5db3342d098114e6d9e774c46c67e573bff611bc3cc65a253f55ad7551d9877772a1789c45#npm:2.1.1"],
+            ["react-remove-scroll-bar", "virtual:ed901c7bdab651ab9cccdf44b398399e70e9d5d185488e6f6bfee7bda4a4f1767d381d1efe95a4fe89658a60bb115f866f807e753c4193e423291610fd8d4b22#npm:2.2.0"],
+            ["react-style-singleton", "virtual:ed901c7bdab651ab9cccdf44b398399e70e9d5d185488e6f6bfee7bda4a4f1767d381d1efe95a4fe89658a60bb115f866f807e753c4193e423291610fd8d4b22#npm:2.1.1"],
             ["tslib", "npm:1.14.1"],
             ["use-callback-ref", "virtual:c543d439137eaff087d79663fe2bf55d7e9e8c7533367722115c3eb357cb68a57f333e290705ad8960b3f9afbdb5ad7f248b6d08adffd67328f71fc3258432f6#npm:1.2.5"],
             ["use-sidecar", "virtual:c543d439137eaff087d79663fe2bf55d7e9e8c7533367722115c3eb357cb68a57f333e290705ad8960b3f9afbdb5ad7f248b6d08adffd67328f71fc3258432f6#npm:1.0.4"]
@@ -20665,14 +20689,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:29e45519c1fa73d4e8017655becfb4533ccbcc4910521792015dfa5db3342d098114e6d9e774c46c67e573bff611bc3cc65a253f55ad7551d9877772a1789c45#npm:2.2.0", {
-          "packageLocation": "./.yarn/$$virtual/react-remove-scroll-bar-virtual-b3842b41db/0/cache/react-remove-scroll-bar-npm-2.2.0-eca9cd0598-5f792704f3.zip/node_modules/react-remove-scroll-bar/",
+        ["virtual:ed901c7bdab651ab9cccdf44b398399e70e9d5d185488e6f6bfee7bda4a4f1767d381d1efe95a4fe89658a60bb115f866f807e753c4193e423291610fd8d4b22#npm:2.2.0", {
+          "packageLocation": "./.yarn/$$virtual/react-remove-scroll-bar-virtual-5666a420b9/0/cache/react-remove-scroll-bar-npm-2.2.0-eca9cd0598-5f792704f3.zip/node_modules/react-remove-scroll-bar/",
           "packageDependencies": [
-            ["react-remove-scroll-bar", "virtual:29e45519c1fa73d4e8017655becfb4533ccbcc4910521792015dfa5db3342d098114e6d9e774c46c67e573bff611bc3cc65a253f55ad7551d9877772a1789c45#npm:2.2.0"],
+            ["react-remove-scroll-bar", "virtual:ed901c7bdab651ab9cccdf44b398399e70e9d5d185488e6f6bfee7bda4a4f1767d381d1efe95a4fe89658a60bb115f866f807e753c4193e423291610fd8d4b22#npm:2.2.0"],
             ["@types/react", "npm:17.0.2"],
             ["@types/types__react", null],
             ["react", "npm:17.0.1"],
-            ["react-style-singleton", "virtual:29e45519c1fa73d4e8017655becfb4533ccbcc4910521792015dfa5db3342d098114e6d9e774c46c67e573bff611bc3cc65a253f55ad7551d9877772a1789c45#npm:2.1.1"],
+            ["react-style-singleton", "virtual:ed901c7bdab651ab9cccdf44b398399e70e9d5d185488e6f6bfee7bda4a4f1767d381d1efe95a4fe89658a60bb115f866f807e753c4193e423291610fd8d4b22#npm:2.1.1"],
             ["tslib", "npm:1.14.1"]
           ],
           "packagePeers": [
@@ -20776,10 +20800,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:29e45519c1fa73d4e8017655becfb4533ccbcc4910521792015dfa5db3342d098114e6d9e774c46c67e573bff611bc3cc65a253f55ad7551d9877772a1789c45#npm:2.1.1", {
-          "packageLocation": "./.yarn/$$virtual/react-style-singleton-virtual-4184ee2e7b/0/cache/react-style-singleton-npm-2.1.1-27d15dce58-c7b4ed0d1f.zip/node_modules/react-style-singleton/",
+        ["virtual:ed901c7bdab651ab9cccdf44b398399e70e9d5d185488e6f6bfee7bda4a4f1767d381d1efe95a4fe89658a60bb115f866f807e753c4193e423291610fd8d4b22#npm:2.1.1", {
+          "packageLocation": "./.yarn/$$virtual/react-style-singleton-virtual-e5be1d9677/0/cache/react-style-singleton-npm-2.1.1-27d15dce58-c7b4ed0d1f.zip/node_modules/react-style-singleton/",
           "packageDependencies": [
-            ["react-style-singleton", "virtual:29e45519c1fa73d4e8017655becfb4533ccbcc4910521792015dfa5db3342d098114e6d9e774c46c67e573bff611bc3cc65a253f55ad7551d9877772a1789c45#npm:2.1.1"],
+            ["react-style-singleton", "virtual:ed901c7bdab651ab9cccdf44b398399e70e9d5d185488e6f6bfee7bda4a4f1767d381d1efe95a4fe89658a60bb115f866f807e753c4193e423291610fd8d4b22#npm:2.1.1"],
             ["@types/react", "npm:17.0.2"],
             ["@types/types__react", null],
             ["get-nonce", "npm:1.0.1"],
@@ -20835,7 +20859,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pretty-quick", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:3.1.0"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:17.0.1"],
+            ["react-icons", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:4.1.0"],
             ["react-refresh", "npm:0.9.0"],
+            ["react-remove-scroll", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:2.4.1"],
             ["react-scripts", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:4.0.3"],
             ["ts-jest", "virtual:d469b6b4eb89849f2580698e141368309938425e76320f37547434cb231f7945a74779bc6c6a6e43c29e5b52bf08addb32d4aac0922bfc5578dddc3b02c5d3d1#npm:26.5.2"],
             ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"],

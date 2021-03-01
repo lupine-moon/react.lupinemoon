@@ -1,0 +1,192 @@
+import {
+  Box,
+  BoxProps,
+  Center,
+  CloseButton,
+  Flex,
+  Link,
+  HStack,
+  IconButton,
+  IconButtonProps,
+  useBreakpointValue,
+  useColorModeValue,
+  useUpdateEffect,
+} from '@chakra-ui/react';
+import { AnimatePresence, motion, useElementScroll } from 'framer-motion';
+import * as React from 'react';
+// import useRouteChanged from 'hooks/use-route-changed';
+// import { getRoutes } from 'layouts/mdx';
+// import NextLink from 'next/link';
+// import { useRouter } from 'next/router';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { RemoveScroll } from 'react-remove-scroll';
+
+import { Logo } from './Logo';
+// import { SidebarContent } from './sidebar/sidebar';
+
+interface NavLinkProps {
+  children?: React.ReactNode;
+  href: string;
+}
+function NavLink({ href, children }: NavLinkProps) {
+  // const { pathname } = useRouter();
+  const pathname = '';
+
+  const [, group] = href.split('/');
+  const isActive = pathname.includes(group);
+
+  return (
+    <Link href={href}>
+      <Center
+        flex="1"
+        minH="40px"
+        as="button"
+        rounded="md"
+        transition="0.2s all"
+        fontWeight={isActive ? 'semibold' : 'medium'}
+        bg={isActive ? 'teal.400' : undefined}
+        borderWidth={isActive ? undefined : '1px'}
+        color={isActive ? 'white' : undefined}
+        _hover={{
+          bg: isActive ? 'teal.500' : useColorModeValue('gray.100', 'whiteAlpha.100'),
+        }}
+      >
+        {children}
+      </Center>
+    </Link>
+  );
+}
+NavLink.defaultProps = {
+  children: null,
+};
+
+interface ScrollViewProps {
+  onScrollResult?: (scrolled: boolean) => void;
+}
+const ScrollView = (props: BoxProps & ScrollViewProps) => {
+  const { onScrollResult, ...rest } = props;
+  const [y, setY] = React.useState(0);
+  const elRef = React.useRef<any>();
+  const { scrollY } = useElementScroll(elRef);
+  React.useEffect(() => {
+    return scrollY.onChange(() => setY(scrollY.get()));
+  }, [scrollY]);
+
+  useUpdateEffect(() => {
+    onScrollResult?.(y > 5);
+  }, [y]);
+
+  return <Box ref={elRef} flex="1" id="routes" overflow="auto" px="6" pb="6" {...rest} />;
+};
+ScrollView.defaultProps = {
+  onScrollResult: () => {},
+};
+
+interface MobileNavContentProps {
+  isOpen?: boolean;
+  onClose?: () => void;
+}
+export function MobileNavContent(props: MobileNavContentProps): JSX.Element {
+  const { isOpen, onClose } = props;
+  const closeBtnRef = React.useRef<HTMLButtonElement>();
+  // const { pathname } = useRouter();
+
+  // useRouteChanged(onClose);
+
+  /**
+   * Scenario: Menu is open on mobile, and user resizes to desktop/tablet viewport.
+   * Result: We'll close the menu
+   */
+  const showOnBreakpoint = useBreakpointValue({ base: true, lg: false });
+
+  React.useEffect(() => {
+    if (showOnBreakpoint === false && onClose) {
+      onClose();
+    }
+  }, [showOnBreakpoint]);
+
+  useUpdateEffect(() => {
+    if (isOpen) {
+      requestAnimationFrame(() => {
+        closeBtnRef.current?.focus();
+      });
+    }
+  }, [isOpen]);
+
+  const [shadow, setShadow] = React.useState<string>();
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <RemoveScroll forwardProps>
+          <motion.div
+            transition={{ duration: 0.08 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <Flex
+              direction="column"
+              w="100%"
+              bg={useColorModeValue('white', 'gray.800')}
+              h="100vh"
+              overflow="auto"
+              pos="absolute"
+              top="0"
+              left="0"
+              zIndex={20}
+              pb="8"
+            >
+              <Box>
+                <Flex justify="space-between" px="6" pt="5" pb="4">
+                  <Logo />
+                  <HStack spacing="5">
+                    <CloseButton
+                      ref={closeBtnRef as React.RefObject<HTMLButtonElement>}
+                      onClick={onClose}
+                    />
+                  </HStack>
+                </Flex>
+                <Box px="6" pb="6" pt="2" shadow={shadow}>
+                  <HStack>
+                    <NavLink href="/docs/getting-started">Docs</NavLink>
+                    <NavLink href="/guides/integrations/with-cra">Guides</NavLink>
+                    <NavLink href="/team">Team</NavLink>
+                  </HStack>
+                </Box>
+              </Box>
+
+              <ScrollView
+                onScrollResult={(scrolled: boolean) => {
+                  setShadow(scrolled ? 'md' : undefined);
+                }}
+              >
+                {/* <SidebarContent pathname={pathname} routes={getRoutes(pathname)} /> */}
+              </ScrollView>
+            </Flex>
+          </motion.div>
+        </RemoveScroll>
+      )}
+    </AnimatePresence>
+  );
+}
+MobileNavContent.defaultProps = {
+  isOpen: false,
+  onClose: () => {},
+};
+
+export const MobileNavButton = React.forwardRef((props: IconButtonProps, ref: React.Ref<any>) => {
+  return (
+    <IconButton
+      ref={ref}
+      display={{ base: 'flex', md: 'none' }}
+      // aria-label="Open menu"
+      fontSize="20px"
+      color={useColorModeValue('gray.800', 'inherit')}
+      variant="ghost"
+      icon={<AiOutlineMenu />}
+      {...props}
+    />
+  );
+});
+MobileNavButton.displayName = 'MobileNavButton';
