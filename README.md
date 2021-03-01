@@ -1,6 +1,6 @@
 # react.lupinemoon
 
-This is the source code for [Lupine Moon](https://www.lupinemoon.co.za) website, built using React, Typescript, MobX, Ant Design, and Webpack. We leverage [Create React App Configuration Override](https://github.com/sharegate/craco) in order to provide custom build functionality.
+This is the source code for [Lupine Moon](https://www.lupinemoon.co.za) website, built using React, Typescript, MobX, Chakra UI, and Webpack. We leverage [Create React App Configuration Override](https://github.com/sharegate/craco) in order to provide custom build functionality.
 
 ## Getting Started
 

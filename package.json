@@ -1,7 +1,7 @@
 {
   "name": "react.lupinemoon",
   "version": "0.0.1",
-  "description": "The Lupine Moon website built using React, Typescript, MobX, Ant Design, and Webpack.",
+  "description": "The Lupine Moon website built using React, Typescript, MobX, Chakra UI, and Webpack.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nicolaspearson/react.lupinemoon.git"

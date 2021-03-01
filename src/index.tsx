@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './containers/App';
-import theme from './theme';
+import theme from './theme/app-theme';
 import reportWebVitals from './utils/reportWebVitals';
 
 ReactDOM.render(
